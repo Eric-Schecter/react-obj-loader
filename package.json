@@ -1,0 +1,42 @@
+{
+  "name": "@youyouzone/react-obj-loader",
+  "version": "0.0.1",
+  "private": true,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "three": "^0.129.0",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "npm run clean && tsc"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "loader",
+    "3d-object",
+    "threejs"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.45",
+    "@types/react-dom": "^16.9.8",
+    "@types/three": "^0.129.1"
+  },
+  "homepage": "https://github.com/Eric-Schecter/react-obj-loader"
+}
