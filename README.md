@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./screenshot/profile.gif">
+</p>
+
 # React-Obj-Loader
 React component for loading 3D objs by drag-and-drop files based on loaders in Threejs.  
 Support: glTF/obj/stl  
