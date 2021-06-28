@@ -14,8 +14,7 @@
     "build": "npm run clean && tsc"
   },
   "keywords": [
-    "react",
-    "component",
+    "react-component",
     "loader",
     "3d-object",
     "threejs"
