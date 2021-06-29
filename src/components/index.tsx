@@ -9,15 +9,15 @@ type Props = {
   normalized?: boolean
 }
 
-export const ObjLoader = ({ children, cb = () => { }, className, normalized = true }: Props) => {
+export const ObjLoader = ({ children, cb = () => { }, className = '', normalized = true }: Props) => {
   const refLoader = useRef(new LoaderManager());
 
   const dragover = (e: React.DragEvent) => {
     e.preventDefault();
   }
-  
+
   const drop = async (e: React.DragEvent) => {
-    if(!refLoader.current){
+    if (!refLoader.current) {
       return;
     }
     e.stopPropagation();
@@ -31,9 +31,9 @@ export const ObjLoader = ({ children, cb = () => { }, className, normalized = tr
     }
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     return refLoader.current.dispose;
-  },[])
+  }, [])
 
   return <div
     className={className}

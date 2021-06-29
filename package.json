@@ -1,11 +1,11 @@
 {
   "name": "@youyouzone/react-obj-loader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "clean": "rm -rf lib",
-    "build": "npm run clean && tsc"
+    "build": "npm run clean && webpack"
   },
   "keywords": [
     "react-component",
@@ -28,9 +28,6 @@
   "devDependencies": {
     "@types/react": "^16.9.45",
     "@types/three": "^0.129.1",
-    "css-loader": "^5.2.6",
-    "sass-loader": "^12.1.0",
-    "style-loader": "^3.0.0",
     "ts-loader": "^9.2.3",
     "typescript": "^3.7.5",
     "webpack": "^5.40.0",
