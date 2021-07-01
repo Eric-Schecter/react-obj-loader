@@ -3,7 +3,7 @@ import { Object3D } from 'three';
 import { LoaderManager } from './loaders';
 
 type Props = {
-  children?: ReactChild,
+  children?: ReactChild | ReactChild[],
   cb?: (items: Object3D[]) => any,
   className?: string,
   normalized?: boolean
